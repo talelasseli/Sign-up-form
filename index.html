@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link rel="stylesheet" type="text/css" href="styles.css" />
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script defer src="script.js"></script>
+    <div id="images">
+      <div id="insideImages">
+        <img src="odin-lined.png" alt="Odin Logo" />
+        ODIN
+      </div>
+    </div>
+    <form action="#" method="GET" id="form">
+      <div id="someText">
+        This is not a real online service! You know you need something like this
+        in your life to help you realize your deepest dreams. Sign up now to get
+        started.
+        <h3>You <em>know</em> you want to</h3>
+      </div>
+      <div id="format">
+        <label id="header">Let's do this!</label>
+        <div class="grid">
+          <div class="labelAndInput">
+            <label for="firstName">FIRST NAME</label>
+            <input
+              type="text"
+              name="firstName"
+              id="firstName"
+              required
+              placeholder="Sponge Bob"
+            />
+          </div>
+          <div class="labelAndInput">
+            <label for="lastName">LAST NAME</label>
+            <input
+              type="text"
+              name="lastName"
+              id="lastName"
+              required
+              placeholder="Square Pants"
+            />
+          </div>
+        </div>
+
+        <div class="grid">
+          <div class="labelAndInput">
+            <label for="email">EMAIL</label>
+            <input
+              type="email"
+              name="email"
+              id="email"
+              required
+              placeholder="SpongyBob@gmail.com"
+            />
+          </div>
+          <div class="labelAndInput">
+            <label for="number">PHONE NUMBER</label>
+            <input type="tel" name="number" id="number" required />
+          </div>
+        </div>
+
+        <div class="grid">
+          <div class="labelAndInput">
+            <label for="password">PASSWORD</label>
+            <input
+              type="password"
+              name="password"
+              id="password"
+              required
+              minlength="7"
+            />
+          </div>
+          <div class="labelAndInput">
+            <label for="confirmPassword">CONFIRM PASSWORD</label>
+            <input
+              type="password"
+              name="confirmPassword"
+              id="confirmPassword"
+              required
+            />
+          </div>
+        </div>
+        <div id="errorMessage"></div>
+      </div>
+      <button id="submitBtn" type="submit">Create Account</button>
+      <div id="footer">
+        Already have an account?
+        <button type="button" id="footerbutton">Log in</button>
+      </div>
+    </form>
+  </body>
+</html>
